@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.component.css" />
+</head>
+<body>
+    <div class="content">
+        <div class="box">
+            <form id="queries_form" action="#" method="post">
+                <h1 style="text-align: center;">Login</h1>
+                <br />
+                <div class="container">
+                    
+                    <label for="float-input">nombre</label>
+                    <input type="text" id="username" name="username" [(ngModel)]="name" required>
+                </div>
+
+                <div class="container">
+
+                    <label for="float-input">Username</label>
+                    <input type="text" id="username" name="username" [(ngModel)]="username" required>
+                </div>
+                <br />
+                <div class="container">
+                    <label for="feedback">Password</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+                </div>
+                <br />
+                <div class="container">
+                    <label for="feedback">Tipo</label>
+                    <input type="tipo" id="tipo" name="tipo" [(ngModel)]="tipo" required>
+                </div>
+                <br />
+                <div class="divboton">
+                  <button (click)="redirectToInicio()">Ir a Inicio</button>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Recolección</title>
+</head>
+<body>
+    <h1>Formulario de Recolección</h1>
+    <form action="/submit" method="post">
+        <!-- <label for="nombre">id:</label><br>
+        <input type="text" id="id" [(ngModel)]="id" name="id"><br><br> -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre"><br><br>
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" id="direccion" [(ngModel)]="direccion" name="direccion"><br><br>
+        <input type="submit" value="Enviar" (click)="insertPetition()">
+    </form>
+</body>
+</html>
