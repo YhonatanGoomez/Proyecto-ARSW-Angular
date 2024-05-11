@@ -1,0 +1,27 @@
+<h1>ver ofertas generales</h1>
+
+
+<div *ngIf="ofertas.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Estado</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let oferta of ofertas; let i = index">
+        <td>{{ oferta.data[0] }}</td>
+        <td>{{ oferta.data[1] }}</td>
+        <td>{{ oferta.data[2] }}</td>
+        <td>{{ oferta.data[3] }}</td>
+        <td>
+          <button class="float" (click)="consultarOferta(oferta.data[0])">Tomar Oferta</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

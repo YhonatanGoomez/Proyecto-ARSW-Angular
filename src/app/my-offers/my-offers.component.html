@@ -1,0 +1,22 @@
+<h1>ver mis ofertas</h1>
+
+<div *ngIf="ofertas.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let oferta of ofertas; let i = index">
+        <td>{{ oferta[0] }}</td>
+        <td>{{ oferta[1] }}</td>
+        <td>{{ oferta[2] }}</td>
+        <td>{{ oferta[3] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

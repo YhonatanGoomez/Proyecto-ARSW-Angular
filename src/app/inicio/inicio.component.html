@@ -1,0 +1,11 @@
+
+<div>
+    <div *ngIf="rol == 'usuario'">
+<button (click)="redirect('crear')">crear oferta</button>
+</div>
+<button (click)="redirect('my-offers')">mis ofertas</button>
+<div *ngIf="rol == 'reciclador'">
+<button (click)="redirect('ofertas')">ver ofertas</button>
+</div>
+
+</div>
